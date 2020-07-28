@@ -1,6 +1,7 @@
 package me.yolosw;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,13 +16,16 @@ public class Main implements ActionListener {
     public Main(){
 
         button = new JButton("Click");
+        button.setMaximumSize(new Dimension(10, 10));
         button.addActionListener(this);
-        label = new JLabel("Number of clicks: ");
 
+        label = new JLabel("Number of clicks: ");
         panel = new JPanel();
-        panel.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
+
+        panel.setBorder(BorderFactory.createEmptyBorder(20, 30, 20, 30));
         panel.add(button);
         panel.add(label);
+        panel.setSize(10, 10);
         panel.setLayout(new GridLayout(0, 1));
 
 
@@ -44,13 +48,11 @@ public class Main implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         count++;
         label.setText("Number of clicks: " + count);
-        switch (count){
-            case 10:
-                label.setText("You just clicked " + count + " clicks");
+        if (count == 10) {
+            label.setText("You just clicked " + count + " clicks");
         }
-        switch (count){
-            case 1000:
-                System.exit(0);
+        if (count == 1000) {
+            System.exit(0);
         }
 
     }
