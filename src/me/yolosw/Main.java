@@ -23,7 +23,7 @@ public class Main implements ActionListener {
         button.getPreferredSize().getHeight();
         button.setBounds(50, 50, 100, 30);
         button.addActionListener(this);
-
+// g
         panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(200, 300, 200, 300));
         panel.add(button);
