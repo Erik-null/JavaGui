@@ -20,4 +20,8 @@ Changed  panel.setLayout to GridBagLayout
 14:52 2020 07 29
 
  */
+/* ChangeLog 1.3
+Added Pewdiepie background
+21:48 2020 07 29
 
+ */
