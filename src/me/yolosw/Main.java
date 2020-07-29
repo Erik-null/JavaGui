@@ -25,7 +25,7 @@ public class Main implements ActionListener {
         button.addActionListener(this);
 
         panel = new JPanel();
-        panel.setBorder(BorderFactory.createEmptyBorder(200, 300, 200, 300));
+        panel.setBorder(BorderFactory.createEmptyBorder(20, 30, 20, 30));
         panel.add(button);
         panel.add(label);
         panel.setSize(10, 20);

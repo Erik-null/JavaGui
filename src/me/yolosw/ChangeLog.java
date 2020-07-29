@@ -15,4 +15,9 @@ Changed button size
 Remove GridLayout()
 03:49 2020 07 29
  */
+/* ChangeLog 1.2
+Changed  panel.setLayout to GridBagLayout
+14:52 2020 07 29
+
+ */
 
