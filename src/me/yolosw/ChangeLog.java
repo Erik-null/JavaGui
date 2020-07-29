@@ -6,7 +6,6 @@ public class ChangeLog {
  Added Git
  19:44 2020 07 28
  */
- // g
 /* Changelog 1.1
 Changed from switch to If
 19:59 2020 07 28
