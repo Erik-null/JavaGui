@@ -15,18 +15,21 @@ public class Main implements ActionListener {
 
     public Main(){
 
-        button = new JButton("Click");
-        button.setMaximumSize(new Dimension(10, 10));
-        button.addActionListener(this);
+
 
         label = new JLabel("Number of clicks: ");
-        panel = new JPanel();
 
-        panel.setBorder(BorderFactory.createEmptyBorder(20, 30, 20, 30));
+        button = new JButton("Click");
+        button.getPreferredSize().getHeight();
+        button.setBounds(50, 50, 100, 30);
+        button.addActionListener(this);
+
+        panel = new JPanel();
+        panel.setBorder(BorderFactory.createEmptyBorder(200, 300, 200, 300));
         panel.add(button);
         panel.add(label);
-        panel.setSize(10, 10);
-        panel.setLayout(new GridLayout(0, 1));
+        panel.setSize(10, 20);
+        panel.setLayout(null);
 
 
 
@@ -34,6 +37,7 @@ public class Main implements ActionListener {
         frame.add(panel, BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setTitle("My gui");
+        frame.setSize(100, 100);
         frame.pack();
         frame.setVisible(true);
 
