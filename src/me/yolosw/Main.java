@@ -12,21 +12,24 @@ public class Main implements ActionListener {
     JPanel panel;
     JFrame frame;
     JButton button;
+    JLabel pewBackground;
+
     public Main(){
-
-
 
         button = new JButton("Click");
         button.setBounds(50, 50, 100, 30);
         button.addActionListener(this);
         button.setBackground(Color.CYAN);
-        label = new JLabel("Number of clicks: ");
+
+        label = new JLabel("Number of brofists: " + count);
+
         panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(20, 30, 20, 30));
-        panel.add(button);
         panel.add(label);
-        panel.setSize(10, 20);
+        panel.add(button);
+        panel.setSize(100, 20);
         panel.setLayout(new GridBagLayout());
+
         frame = new JFrame();
         frame.add(panel, BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -34,17 +37,30 @@ public class Main implements ActionListener {
         frame.setSize(100, 100);
         frame.pack();
         frame.setVisible(true);
+
+        pewBackground = new JLabel();
+        pewBackground.setBounds(100, 100, 1200, 700);
+        frame.setContentPane(new JLabel((new ImageIcon("C:\\Users\\eriks\\IdeaProjects\\Javaproject\\src\\me\\yolosw\\brofist.png"))));
+        frame.add(pewBackground);
+        frame.setSize(1000, 1000);
+        label.setBounds(50, 50, 1000, 10);
+        frame.add(button);
+        frame.add(label);
+
+
+
+
     }
+
     public static void main(String[] args){
         new Main();
     }
     @Override
     public void actionPerformed(ActionEvent e) {
         count++;
-        label.setText("Number of clicks: " + count);
-        if (count == 10) {
-            label.setText("You just clicked: " + count);
-            count++;
+        label.setText( "Number of brofists: " + count);
+        if(count == 10){
+            label.setText(count + " Brofists");
         }
 
     }
