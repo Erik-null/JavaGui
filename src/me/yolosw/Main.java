@@ -33,19 +33,18 @@ public class Main implements ActionListener {
         frame = new JFrame();
         frame.add(panel, BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("My gui");
-        frame.setSize(100, 100);
+        frame.setTitle("BroFist GUI");
         frame.pack();
-        frame.setVisible(true);
 
         pewBackground = new JLabel();
         pewBackground.setBounds(100, 100, 1200, 700);
         frame.setContentPane(new JLabel((new ImageIcon("C:\\Users\\eriks\\IdeaProjects\\Javaproject\\src\\me\\yolosw\\brofist.png"))));
         frame.add(pewBackground);
         frame.setSize(1000, 1000);
-        label.setBounds(50, 50, 1000, 10);
+        label.setBounds(110, 50, 1000, 10);
         frame.add(button);
         frame.add(label);
+        frame.setVisible(true);
 
 
 
