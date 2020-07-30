@@ -25,3 +25,9 @@ Added Pewdiepie background
 21:48 2020 07 29
 
  */
+/*Changelog 1.4
+Change label location
+13:58
+2020 07 30
+
+ */
